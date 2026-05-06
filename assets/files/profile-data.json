@@ -1,0 +1,44 @@
+{
+  "name": "Vuong Tan Nhac",
+  "professionalTitle": ".NET Developer",
+  "summary": "Backend-focused developer building practical web applications and business software with C#, .NET, and SQL Server.",
+  "location": {
+    "publicLabel": "635/9 Bà Hạt, phường Diên Hồng, TP Hồ Chí Minh",
+    "sourcePdf": "assets/files/my_cv.pdf",
+    "availabilityDisplay": "Vietnam timezone (UTC+7). Working hours can be aligned after the role or project scope is confirmed.",
+    "detailsToVerify": "Confirm remote-only, hybrid, on-site cities, and exact availability hours."
+  },
+  "contact": {
+    "email": "vuong.tan.nhac@gmail.com",
+    "phone": "(+84) 798 666 658",
+    "fastestResponseChannel": "Email"
+  },
+  "links": {
+    "github": "https://github.com/vuongnhac",
+    "linkedin": "https://www.linkedin.com/in/nhacvuong",
+    "facebook": "https://www.facebook.com/nhac.vuong.1",
+    "cv": "/assets/files/my_cv.pdf"
+  },
+  "skills": [
+    "C#",
+    ".NET Framework",
+    "Microsoft SQL Server",
+    "Object-Oriented Programming",
+    "API integration",
+    "Git"
+  ],
+  "workPreferencesToVerify": [
+    "Full-time",
+    "Freelance",
+    "Open-source",
+    "Ranked priority order"
+  ],
+  "verificationNeeded": [
+    "Exact professional title",
+    "Years of experience",
+    "Current employment status",
+    "Company and project names safe to publish",
+    "Three real project metrics",
+    "Public demo links"
+  ]
+}
