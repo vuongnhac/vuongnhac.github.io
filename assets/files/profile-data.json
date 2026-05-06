@@ -1,9 +1,9 @@
 {
   "name": "Vuong Tan Nhac",
-  "professionalTitle": ".NET Developer",
-  "summary": "Backend-focused developer building practical web applications and business software with C#, .NET, and SQL Server.",
+  "professionalTitle": "Senior .NET Developer",
+  "summary": "Senior .NET Engineer with 8+ years of experience building enterprise systems using C#, .NET, SQL Server, WPF, ASP.NET Core, and Clean Architecture.",
   "location": {
-    "publicLabel": "635/9 Bà Hạt, phường Diên Hồng, TP Hồ Chí Minh",
+    "publicLabel": "635/9 Ba Hat, Dien Hong Ward, Ho Chi Minh City",
     "sourcePdf": "assets/files/my_cv.pdf",
     "availabilityDisplay": "Vietnam timezone (UTC+7). Working hours can be aligned after the role or project scope is confirmed.",
     "detailsToVerify": "Confirm remote-only, hybrid, on-site cities, and exact availability hours."
@@ -21,11 +21,54 @@
   },
   "skills": [
     "C#",
+    "WPF",
+    ".NET Core",
+    "ASP.NET Core",
     ".NET Framework",
     "Microsoft SQL Server",
+    "Entity Framework Core",
+    "Clean Architecture",
     "Object-Oriented Programming",
     "API integration",
     "Git"
+  ],
+  "skillExperience": [
+    {
+      "name": "C#",
+      "years": "8 years"
+    },
+    {
+      "name": "WPF / MVVM",
+      "years": "8 years"
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "years": "7 years"
+    },
+    {
+      "name": ".NET Core",
+      "years": "6 years"
+    },
+    {
+      "name": "Git",
+      "years": "6 years"
+    },
+    {
+      "name": "ASP.NET Core",
+      "years": "5 years"
+    },
+    {
+      "name": "EF Core",
+      "years": "5 years"
+    },
+    {
+      "name": "Clean Architecture",
+      "years": "5 years"
+    },
+    {
+      "name": "REST API / MQTT",
+      "years": "4 years"
+    }
   ],
   "workPreferencesToVerify": [
     "Full-time",
@@ -34,8 +77,6 @@
     "Ranked priority order"
   ],
   "verificationNeeded": [
-    "Exact professional title",
-    "Years of experience",
     "Current employment status",
     "Company and project names safe to publish",
     "Three real project metrics",
