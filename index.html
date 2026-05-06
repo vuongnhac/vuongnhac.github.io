@@ -8,12 +8,12 @@
       name="viewport"
     />
 
-    <title>Vuong Tan Nhac | .NET Developer Portfolio</title>
+    <title>Vuong Tan Nhac | Senior .NET Developer Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Vuong Tan Nhac, a .NET developer focused on web applications, backend systems, SQL Server, and maintainable business software."
+      content="Portfolio of Vuong Tan Nhac, a senior .NET developer focused on enterprise systems, WPF, ASP.NET Core, SQL Server, and maintainable business software."
     />
-    <meta property="og:title" content="Vuong Tan Nhac | .NET Developer" />
+    <meta property="og:title" content="Vuong Tan Nhac | Senior .NET Developer" />
     <meta property="og:description" content="Backend-focused .NET portfolio, selected projects, skills, and contact details." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Vuong Tan Nhac Portfolio" />
@@ -33,13 +33,13 @@
     <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
     <style>
       .portfolio-card {
-        border: 1px solid transparent;
-        background: rgba(244, 243, 248, 0.58);
+        border: 0;
+        background: transparent;
       }
 
       .portfolio-card-soft {
-        border: 1px solid transparent;
-        background: rgba(244, 243, 248, 0.58);
+        border: 0;
+        background: transparent;
       }
 
       .contact-icon {
@@ -60,9 +60,44 @@
         gap: 3.5rem;
       }
 
+      .author-avatar {
+        height: 12rem;
+        width: 12rem;
+      }
+
+      .author-avatar img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .stack-list {
+        gap: 0.75rem;
+      }
+
+      .stack-item {
+        gap: 1rem;
+      }
+
+      .stack-years {
+        padding: 0.25rem 0.75rem;
+      }
+
+      .stack-item,
+      .stack-years {
+        background: transparent;
+      }
+
       @media (min-width: 1024px) {
         .about-layout {
           gap: 5rem;
+        }
+      }
+
+      @media (min-width: 640px) {
+        .author-avatar {
+          height: 14rem;
+          width: 14rem;
         }
       }
     </style>
@@ -101,10 +136,6 @@
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
               <li class="group pl-6">
-                <button @click="triggerNavItem('#experience')" class="pt-0.5 font-header font-semibold uppercase text-white">Experience</button>
-                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
-              </li>
-              <li class="group pl-6">
                 <button @click="triggerNavItem('#contact')" class="pt-0.5 font-header font-semibold uppercase text-white">Contact</button>
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
@@ -128,7 +159,6 @@
             <li class="py-2"><button @click="triggerMobileNavItem('#about')" class="font-header font-semibold uppercase text-white">About</button></li>
             <li class="py-2"><button @click="triggerMobileNavItem('#skills')" class="font-header font-semibold uppercase text-white">Skills</button></li>
             <li class="py-2"><button @click="triggerMobileNavItem('#projects')" class="font-header font-semibold uppercase text-white">Projects</button></li>
-            <li class="py-2"><button @click="triggerMobileNavItem('#experience')" class="font-header font-semibold uppercase text-white">Experience</button></li>
             <li class="py-2"><button @click="triggerMobileNavItem('#contact')" class="font-header font-semibold uppercase text-white">Contact</button></li>
           </ul>
         </nav>
@@ -139,16 +169,16 @@
           <div class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to"></div>
           <div class="container relative z-30 pt-24 pb-16 sm:pt-48 sm:pb-36 lg:pt-56 lg:pb-40">
             <div class="flex max-w-5xl flex-col items-center lg:flex-row lg:items-end">
-              <div class="rounded-full border-8 border-primary">
-                <img src="/assets/img/blog-author.jpg" class="h-48 rounded-full sm:h-56" alt="Vuong Tan Nhac portrait" />
+              <div class="author-avatar shrink-0 overflow-hidden rounded-full border-8 border-primary">
+                <img src="/assets/img/blog-author.jpg" alt="Vuong Tan Nhac portrait" />
               </div>
               <div class="pt-8 text-center lg:pl-8 lg:pt-0 lg:text-left">
-                <p class="font-header text-lg font-semibold uppercase text-yellow">.NET Developer</p>
+                <p class="font-header text-lg font-semibold uppercase text-yellow">Senior .NET Developer</p>
                 <h1 class="pt-2 font-header text-4xl text-white sm:text-5xl md:text-6xl">Vuong Tan Nhac</h1>
                 <p class="max-w-2xl pt-5 text-lg leading-relaxed text-white">
-                  I build practical web applications and backend systems with C#, .NET, SQL Server, and clear implementation habits.
+                  I build enterprise systems with C#, WPF, ASP.NET Core, SQL Server, Clean Architecture, and production-minded implementation habits.
                 </p>
-                <div class="flex flex-col items-center justify-center gap-6 pt-8 sm:flex-row">
+                <div class="flex flex-col items-center justify-center gap-6 pt-8 sm:flex-row lg:justify-start">
                   <a class="rounded bg-yellow px-8 py-3 font-header font-bold uppercase text-primary transition-colors hover:bg-white" href="mailto:vuong.tan.nhac@gmail.com">
                     Contact Me
                   </a>
@@ -156,7 +186,7 @@
                     Download CV
                   </a>
                 </div>
-                <div class="flex items-center justify-center gap-6 pt-8">
+                <div class="flex items-center justify-center gap-6 pt-8 lg:justify-start">
                   <a href="https://github.com/vuongnhac" aria-label="GitHub"><i class="bx bxl-github text-3xl text-white hover:text-yellow"></i></a>
                   <a href="https://www.linkedin.com/in/nhacvuong" aria-label="LinkedIn"><i class="bx bxl-linkedin text-3xl text-white hover:text-yellow"></i></a>
                   <a href="https://www.facebook.com/nhac.vuong.1" aria-label="Facebook"><i class="bx bxl-facebook-square text-3xl text-white hover:text-yellow"></i></a>
@@ -168,25 +198,52 @@
 
         <section class="bg-grey-50" id="about">
           <div class="about-layout container grid py-16 md:py-20 lg:grid-cols-5">
-            <div class="lg:col-span-3">
+            <div class="text-center lg:col-span-3">
               <h2 class="font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">About</h2>
-              <h3 class="pt-6 font-header text-2xl font-medium text-black">
-                Backend-focused developer for maintainable business software.
+              <h3 class="mx-auto max-w-4xl pt-6 font-header text-2xl font-medium text-black">
+                Senior .NET developer for maintainable enterprise software.
               </h3>
-              <p class="pt-6 leading-relaxed text-grey-20">
-                I focus on turning product requirements into reliable application flows, database-backed features, and APIs that are straightforward to operate and extend. This page uses confirmed website information first, with project metrics and employment details ready to update after the CV text source is verified.
+              <p class="mx-auto max-w-4xl pt-6 leading-relaxed text-grey-20">
+                I focus on turning product requirements into reliable application flows, database-backed features, WPF desktop applications, and APIs that are straightforward to operate and extend. My CV highlights 8+ years of experience across enterprise ERP, IoT delivery systems, reporting, integrations, and large SQL-backed datasets.
               </p>
             </div>
             <div class="lg:col-span-2">
-              <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
-                <div class="portfolio-card-soft rounded p-6">
-                  <p class="font-header text-sm font-bold uppercase text-grey-40">Primary Stack</p>
-                  <p class="pt-2 text-lg font-semibold text-primary">C#, .NET Framework, SQL Server</p>
-                </div>
-                <div class="portfolio-card-soft rounded p-6">
-                  <p class="font-header text-sm font-bold uppercase text-grey-40">Availability</p>
-                  <p class="pt-2 text-lg font-semibold text-primary">Vietnam timezone (UTC+7)</p>
-                  <p class="pt-2 text-sm leading-relaxed text-grey-20">Working hours can be aligned after the role or project scope is confirmed.</p>
+              <div class="portfolio-card-soft rounded p-6">
+                <p class="font-header text-sm font-bold uppercase text-grey-40">Primary Stack</p>
+                <p class="pt-2 text-sm leading-relaxed text-grey-20">Main technologies from the CV, grouped by hands-on experience.</p>
+                <div class="stack-list grid pt-5 sm:grid-cols-2 lg:grid-cols-1">
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">C#</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">8 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">WPF / MVVM</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">8 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">SQL Server</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">7 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">.NET Core</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">6 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">ASP.NET Core</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">5 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">EF Core</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">5 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">Clean Architecture</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">5 years</p>
+                  </div>
+                  <div class="stack-item flex items-center justify-between rounded px-4 py-3">
+                    <p class="font-body text-sm font-semibold text-secondary">REST API / MQTT</p>
+                    <p class="stack-years shrink-0 rounded font-body text-sm font-bold text-primary">4 years</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -255,44 +312,6 @@
                   <p class="pt-4 text-grey-20">Prepared operational data views that help teams review status, history, and follow-up work.</p>
                 </div>
               </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="container py-16 md:py-20" id="experience">
-          <h2 class="text-center font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Experience</h2>
-          <div class="portfolio-card mx-auto mt-10 max-w-4xl rounded p-8">
-            <div class="grid gap-8 md:grid-cols-3">
-              <div>
-                <p class="font-header text-base font-bold uppercase text-grey-40">Current Focus</p>
-                <p class="pt-2 font-header text-2xl font-bold text-primary">.NET development</p>
-              </div>
-              <div class="md:col-span-2">
-                <p class="leading-relaxed text-grey-20">
-                  Experience details are intentionally conservative until the CV text source is available. Publish-ready entries should include exact company or project names, dates, role title, and three verified impact metrics.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24" style="background-image: url(/assets/img/experience-figure.png)">
-          <div class="container">
-            <div class="portfolio-card mx-auto py-12 md:w-11/12 lg:py-16">
-              <div class="grid grid-cols-1 gap-8 px-6 text-center sm:grid-cols-3">
-                <div>
-                  <p class="font-body text-4xl font-bold text-primary">12</p>
-                  <p class="pt-2 font-header text-lg font-medium text-grey-40">Projects to verify</p>
-                </div>
-                <div>
-                  <p class="font-body text-4xl font-bold text-primary">4</p>
-                  <p class="pt-2 font-header text-lg font-medium text-grey-40">Core technologies</p>
-                </div>
-                <div>
-                  <p class="font-body text-4xl font-bold text-primary">UTC+7</p>
-                  <p class="pt-2 font-header text-lg font-medium text-grey-40">Working timezone</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
