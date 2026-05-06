@@ -10,49 +10,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
-    <style>
-      .skill-list {
-        display: grid;
-        gap: 1rem;
-      }
-    </style>
+    <link href="/assets/styles/skill-pages.css" media="screen" rel="stylesheet" />
   </head>
-  <body class="bg-white font-body text-black">
+  <body class="skill-page-shell bg-white font-body text-black">
+    <div data-site-header></div>
     <main>
-      <section class="bg-grey-50">
+      <section class="skill-hero">
         <div class="container py-16 md:py-20">
           <a class="font-header text-sm font-bold uppercase text-primary" href="/#skills">Back to skills</a>
-          <div class="pt-10">
-            <i class="bx bx-link text-4xl text-primary"></i>
-            <h1 class="pt-4 font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">API Integration</h1>
-            <p class="max-w-4xl pt-6 leading-relaxed text-grey-20">
-              I connect application systems through backend APIs, third-party service integration, and real-time communication patterns used in operational and IoT workflows.
-            </p>
+          <div class="grid gap-10 pt-10 md:grid-cols-2">
+            <div>
+              <p class="skill-kicker">System connectivity</p>
+              <h1 class="pt-4 font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">API Integration</h1>
+              <p class="pt-6 leading-relaxed text-grey-20">
+                I connect business applications, IoT devices, and external services through REST APIs, MQTT messaging, OAuth2 flows, email, and notification-oriented integrations.
+              </p>
+            </div>
+            <div class="skill-visual">
+              <div class="skill-visual-card">
+                <span class="skill-visual-icon"><i class="bx bx-link"></i></span>
+                <h2 class="pt-5 font-header text-xl font-bold text-primary">RESTful contracts</h2>
+                <p class="pt-3 leading-relaxed text-grey-20">Backend endpoints and service boundaries designed for predictable data exchange.</p>
+              </div>
+              <div class="skill-visual-card">
+                <span class="skill-visual-icon"><i class="bx bx-broadcast"></i></span>
+                <h2 class="pt-5 font-header text-xl font-bold text-primary">Real-time events</h2>
+                <p class="pt-3 leading-relaxed text-grey-20">MQTT communication for device status, sensor data, and operational workflows.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="container py-16 md:py-20">
         <div class="grid gap-10 md:grid-cols-2">
           <div>
             <h2 class="font-header text-2xl font-bold text-primary">What This Covers</h2>
-            <ul class="skill-list pt-6 leading-relaxed text-grey-20">
-              <li>REST API implementation and service-to-service data exchange.</li>
-              <li>MQTT communication for IoT device and event workflows.</li>
-              <li>OAuth2 and external service integration patterns.</li>
-              <li>Email, Dropbox, and notification-oriented integrations from CV-backed work.</li>
-            </ul>
+            <div class="flow-grid pt-8">
+              <article class="flow-card">
+                <h3>API boundaries</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">REST API implementation for application-to-application workflows and delivery platform synchronization.</p>
+              </article>
+              <article class="flow-card">
+                <h3>IoT messaging</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">MQTT-based communication for smart locker devices, sensor events, and real-time validation logic.</p>
+              </article>
+              <article class="flow-card">
+                <h3>External services</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">OAuth2, Dropbox, email, SMS, and notification integrations from CV-backed enterprise and IoT work.</p>
+              </article>
+              <article class="flow-card">
+                <h3>Operational reliability</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Integration logic shaped around debuggability, message handling, and long-running system stability.</p>
+              </article>
+            </div>
           </div>
           <div>
             <h2 class="font-header text-2xl font-bold text-primary">Related Stack</h2>
-            <ul class="skill-list pt-6 leading-relaxed text-grey-20">
-              <li>REST API - 4 years</li>
-              <li>MQTT - 4 years</li>
-              <li>OAuth2 - 1 year</li>
-              <li>ASP.NET Core - 5 years</li>
+            <ul class="stack-detail-list pt-8 leading-relaxed text-grey-20">
+              <li class="stack-detail-item"><span class="stack-detail-name">REST API</span><span class="stack-detail-years">4 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">MQTT</span><span class="stack-detail-years">4 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">OAuth2</span><span class="stack-detail-years">1 year</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">ASP.NET Core</span><span class="stack-detail-years">5 years</span></li>
             </ul>
+            <div class="repo-callout mt-8">
+              <p class="font-header text-xl font-bold">CV evidence</p>
+              <p class="pt-4 leading-relaxed">Smart delivery locker work included RESTful APIs, MQTT sensor streaming, SMS and email notifications, and high-volume event handling.</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <div data-site-footer></div>
+    <script src="/assets/js/site-shell.js"></script>
   </body>
 </html>

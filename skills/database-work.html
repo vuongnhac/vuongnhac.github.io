@@ -10,49 +10,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
-    <style>
-      .skill-list {
-        display: grid;
-        gap: 1rem;
-      }
-    </style>
+    <link href="/assets/styles/skill-pages.css" media="screen" rel="stylesheet" />
   </head>
-  <body class="bg-white font-body text-black">
+  <body class="skill-page-shell bg-white font-body text-black">
+    <div data-site-header></div>
     <main>
-      <section class="bg-grey-50">
+      <section class="skill-hero">
         <div class="container py-16 md:py-20">
           <a class="font-header text-sm font-bold uppercase text-primary" href="/#skills">Back to skills</a>
-          <div class="pt-10">
-            <i class="bx bx-data text-4xl text-primary"></i>
-            <h1 class="pt-4 font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Database Work</h1>
-            <p class="max-w-4xl pt-6 leading-relaxed text-grey-20">
-              I work with SQL-backed applications where data structure, query behavior, and reporting flows need to support real business operations.
-            </p>
+          <div class="grid gap-10 pt-10 md:grid-cols-2">
+            <div>
+              <p class="skill-kicker">Data-backed systems</p>
+              <h1 class="pt-4 font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Database Work</h1>
+              <p class="pt-6 leading-relaxed text-grey-20">
+                I work with SQL Server and EF Core in business systems where data modeling, query behavior, reporting, and operational visibility need to stay reliable as the product grows.
+              </p>
+            </div>
+            <div class="skill-visual">
+              <div class="skill-visual-card">
+                <span class="skill-visual-icon"><i class="bx bx-data"></i></span>
+                <h2 class="pt-5 font-header text-xl font-bold text-primary">Structured data</h2>
+                <p class="pt-3 leading-relaxed text-grey-20">Schemas, relational models, and data access patterns for enterprise workflows.</p>
+              </div>
+              <div class="skill-visual-card">
+                <span class="skill-visual-icon"><i class="bx bx-line-chart"></i></span>
+                <h2 class="pt-5 font-header text-xl font-bold text-primary">Reporting views</h2>
+                <p class="pt-3 leading-relaxed text-grey-20">Operational reporting with SQL-backed views and ComponentOne reporting experience.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="container py-16 md:py-20">
         <div class="grid gap-10 md:grid-cols-2">
           <div>
             <h2 class="font-header text-2xl font-bold text-primary">What This Covers</h2>
-            <ul class="skill-list pt-6 leading-relaxed text-grey-20">
-              <li>SQL Server schemas, queries, and operational data handling.</li>
-              <li>Entity Framework Core usage for application data access.</li>
-              <li>Query optimization and large dataset handling from CV-backed work.</li>
-              <li>Reporting workflows for enterprise and operational systems.</li>
-            </ul>
+            <div class="evidence-grid pt-8">
+              <article class="evidence-card">
+                <h3>SQL Server foundations</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Schemas, queries, stored data flows, and operational data handling for business applications.</p>
+              </article>
+              <article class="evidence-card">
+                <h3>EF Core access</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Application data access with Entity Framework Core, LINQ, and maintainable persistence boundaries.</p>
+              </article>
+              <article class="evidence-card">
+                <h3>Performance tuning</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">CV-backed work includes SQL performance tuning and large datasets of 100k+ records.</p>
+              </article>
+              <article class="evidence-card">
+                <h3>Enterprise reporting</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Reporting flows for ERP-style systems, including ComponentOne reporting experience.</p>
+              </article>
+            </div>
           </div>
           <div>
             <h2 class="font-header text-2xl font-bold text-primary">Related Stack</h2>
-            <ul class="skill-list pt-6 leading-relaxed text-grey-20">
-              <li>Microsoft SQL Server - 7 years</li>
-              <li>EF Core - 5 years</li>
-              <li>Query Optimization - 3 years</li>
-              <li>ComponentOne Reporting - 2 years</li>
+            <ul class="stack-detail-list pt-8 leading-relaxed text-grey-20">
+              <li class="stack-detail-item"><span class="stack-detail-name">Microsoft SQL Server</span><span class="stack-detail-years">7 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">EF Core</span><span class="stack-detail-years">5 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">Query Optimization</span><span class="stack-detail-years">3 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">ComponentOne Reporting</span><span class="stack-detail-years">2 years</span></li>
             </ul>
+            <div class="repo-callout mt-8">
+              <p class="font-header text-xl font-bold">Related repository</p>
+              <p class="pt-4 leading-relaxed">The `api.onion` repository uses EF Core and SQL Server inside a Clean Architecture Web API sample.</p>
+              <p class="pt-5"><a href="https://github.com/vuongnhac/api.onion" target="_blank" rel="noreferrer">View api.onion</a></p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <div data-site-footer></div>
+    <script src="/assets/js/site-shell.js"></script>
   </body>
 </html>

@@ -10,49 +10,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
-    <style>
-      .skill-list {
-        display: grid;
-        gap: 1rem;
-      }
-    </style>
+    <link href="/assets/styles/skill-pages.css" media="screen" rel="stylesheet" />
   </head>
-  <body class="bg-white font-body text-black">
+  <body class="skill-page-shell bg-white font-body text-black">
+    <div data-site-header></div>
     <main>
-      <section class="bg-grey-50">
+      <section class="skill-hero">
         <div class="container py-16 md:py-20">
           <a class="font-header text-sm font-bold uppercase text-primary" href="/#skills">Back to skills</a>
-          <div class="pt-10">
-            <i class="bx bx-code-alt text-4xl text-primary"></i>
-            <h1 class="pt-4 font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Application Development</h1>
-            <p class="max-w-4xl pt-6 leading-relaxed text-grey-20">
-              I build application features with a focus on clear user flows, maintainable C# code, and backend behavior that is easy to test, debug, and extend.
-            </p>
+          <div class="grid gap-10 pt-10 md:grid-cols-2">
+            <div>
+              <p class="skill-kicker">Feature delivery</p>
+              <h1 class="pt-4 font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Application Development</h1>
+              <p class="pt-6 leading-relaxed text-grey-20">
+                I build application features across WPF desktop software and ASP.NET Core backend systems, with an emphasis on clear flows, maintainable C# code, and practical production behavior.
+              </p>
+            </div>
+            <div class="skill-visual">
+              <div class="skill-visual-card">
+                <span class="skill-visual-icon"><i class="bx bx-window-alt"></i></span>
+                <h2 class="pt-5 font-header text-xl font-bold text-primary">Desktop UX</h2>
+                <p class="pt-3 leading-relaxed text-grey-20">WPF screens, MVVM bindings, reusable controls, and stateful business workflows.</p>
+              </div>
+              <div class="skill-visual-card">
+                <span class="skill-visual-icon"><i class="bx bx-server"></i></span>
+                <h2 class="pt-5 font-header text-xl font-bold text-primary">Backend features</h2>
+                <p class="pt-3 leading-relaxed text-grey-20">ASP.NET Core APIs, application services, and SQL-backed feature behavior.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="container py-16 md:py-20">
         <div class="grid gap-10 md:grid-cols-2">
           <div>
             <h2 class="font-header text-2xl font-bold text-primary">What This Covers</h2>
-            <ul class="skill-list pt-6 leading-relaxed text-grey-20">
-              <li>Feature implementation from requirements to working application flows.</li>
-              <li>WPF desktop application work using MVVM and reusable UI components.</li>
-              <li>ASP.NET Core backend features and API-ready application behavior.</li>
-              <li>Refactoring, bug fixing, and production-minded delivery habits.</li>
-            </ul>
+            <div class="flow-grid pt-8">
+              <article class="flow-card">
+                <h3>Requirement to workflow</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Turn business requirements into screens, validation rules, data operations, and user-facing flows.</p>
+              </article>
+              <article class="flow-card">
+                <h3>WPF implementation</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">CV-backed ERP work includes WPF MVVM, reusable custom controls, and shared UI component libraries.</p>
+              </article>
+              <article class="flow-card">
+                <h3>Backend support</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Feature behavior backed by ASP.NET Core APIs, EF Core, SQL Server, and integration points.</p>
+              </article>
+              <article class="flow-card">
+                <h3>Production maintenance</h3>
+                <p class="pt-3 leading-relaxed text-grey-20">Refactoring, bug fixing, Git workflow, and code organization for systems that keep evolving.</p>
+              </article>
+            </div>
           </div>
           <div>
             <h2 class="font-header text-2xl font-bold text-primary">Related Stack</h2>
-            <ul class="skill-list pt-6 leading-relaxed text-grey-20">
-              <li>C# - 8 years</li>
-              <li>WPF / MVVM - 8 years</li>
-              <li>.NET Core - 6 years</li>
-              <li>ASP.NET Core - 5 years</li>
+            <ul class="stack-detail-list pt-8 leading-relaxed text-grey-20">
+              <li class="stack-detail-item"><span class="stack-detail-name">C#</span><span class="stack-detail-years">8 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">WPF / MVVM</span><span class="stack-detail-years">8 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">.NET Core</span><span class="stack-detail-years">6 years</span></li>
+              <li class="stack-detail-item"><span class="stack-detail-name">ASP.NET Core</span><span class="stack-detail-years">5 years</span></li>
             </ul>
+            <div class="repo-callout mt-8">
+              <p class="font-header text-xl font-bold">Related repository</p>
+              <p class="pt-4 leading-relaxed">The `wpf.mvvm` repository demonstrates WPF MVVM structure, data binding, RelayCommand usage, and maintainable desktop UI organization.</p>
+              <p class="pt-5"><a href="https://github.com/vuongnhac/wpf.mvvm" target="_blank" rel="noreferrer">View wpf.mvvm</a></p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <div data-site-footer></div>
+    <script src="/assets/js/site-shell.js"></script>
   </body>
 </html>
