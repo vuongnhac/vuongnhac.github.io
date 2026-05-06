@@ -1,34 +1,85 @@
-# Atom - A vibrant portfolio template
-#### Preview
+# Vuong Tan Nhac Portfolio
 
- - [Demo](https://themewagon.github.io/atom/)
+Personal portfolio website for Vuong Tan Nhac, focused on presenting a Senior .NET Developer profile, selected project work, CV-backed technical experience, and contact information.
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/atom/)
+Live site: https://vuongnhac.github.io/
 
-## Getting Started
+## Website Direction
 
-1. Clone Repository
-```
-git clone https://github.com/themewagon/atom.git
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run the development server:
+This site is designed as a practical developer portfolio rather than a marketing landing page. The main goals are:
+
+- Present the profile clearly as a Senior .NET Developer.
+- Highlight enterprise software experience with C#, WPF, ASP.NET Core, SQL Server, EF Core, and Clean Architecture.
+- Keep project descriptions public-safe until company names, screenshots, metrics, and demo links are approved.
+- Make the CV, GitHub, LinkedIn, and contact channels easy to find.
+- Keep content simple to update through `index.html` and `assets/files/profile-data.json`.
+
+## Content Sources
+
+- Main page: `index.html`
+- Profile data: `assets/files/profile-data.json`
+- CV file: `assets/files/my_cv.pdf`
+- Styles entry: `assets/styles/main.css`
+- Compiled stylesheet: `assets/styles/main.min.css`
+
+The `Primary Stack` section is based on the current CV and lists hands-on experience by years.
+
+## Local Development
+
+Install dependencies:
 
 ```bash
-npm serve .
+npm install
 ```
 
-## Author 
+Run the development server with CSS watch:
+
+```bash
+npm run develop
 ```
-Design and code is completely written by Red Pixel Themes and development team. 
+
+Build CSS for production:
+
+```bash
+npm run build
 ```
+
+For a quick static preview without rebuilding CSS:
+
+```bash
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Updating Content
+
+Use `assets/files/profile-data.json` for structured profile facts such as contact details, links, skills, and CV-backed experience.
+
+Use `index.html` for layout, section copy, navigation, and visible project showcase content.
+
+When adding project details, prefer verified facts:
+
+- Project or product name safe to publish
+- Role and responsibilities
+- Tech stack
+- Team size
+- Timeline
+- Screenshots or demo links approved for public use
+- Measured outcomes or metrics
+
+## Template Attribution
+
+This portfolio was adapted from the Atom HTML template.
+
+- Original template: https://themewagon.github.io/atom/
+- Distributed by ThemeWagon: https://themewagon.com/
+- Original design/code by Red Pixel Themes
 
 ## License
 
- - Design and Code is Copyright &copy; <a href="https://redpixelthemes.gumroad.com/" target="_blank">Red Pixel Themes</a>
- - Licensed cover under [MIT]
- - Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+Original template design and code remain under their respective ThemeWagon / Red Pixel Themes license terms. Portfolio content, CV data, and personal information belong to Vuong Tan Nhac.

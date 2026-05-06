@@ -88,6 +88,24 @@
         background: transparent;
       }
 
+      .project-link {
+        border-bottom: 1px solid rgba(85, 64, 175, 0.16);
+      }
+
+      .project-link:last-child {
+        border-bottom: 0;
+      }
+
+      .contact-map {
+        min-height: 22rem;
+      }
+
+      .contact-map iframe {
+        height: 100%;
+        min-height: 22rem;
+        width: 100%;
+      }
+
       @media (min-width: 1024px) {
         .about-layout {
           gap: 5rem;
@@ -253,34 +271,34 @@
         <section class="container py-16 md:py-20" id="skills">
           <h2 class="text-center font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Core Skills</h2>
           <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 lg:grid-cols-4">
-            <article class="portfolio-card-soft rounded p-6">
+            <a class="portfolio-card-soft block rounded p-6 transition-colors hover:text-primary" href="/skills/application-development.html">
               <div class="flex items-center gap-5">
                 <i class="bx bx-code-alt skill-icon text-primary"></i>
                 <h3 class="font-header text-lg font-bold uppercase text-primary">Application Development</h3>
               </div>
               <p class="pt-4 text-grey-20">Feature implementation, refactoring, bug fixing, and production-minded delivery for web applications.</p>
-            </article>
-            <article class="portfolio-card-soft rounded p-6">
+            </a>
+            <a class="portfolio-card-soft block rounded p-6 transition-colors hover:text-primary" href="/skills/database-work.html">
               <div class="flex items-center gap-5">
                 <i class="bx bx-data skill-icon text-primary"></i>
                 <h3 class="font-header text-lg font-bold uppercase text-primary">Database Work</h3>
               </div>
               <p class="pt-4 text-grey-20">SQL Server schemas, queries, reporting flows, and data handling for business operations.</p>
-            </article>
-            <article class="portfolio-card-soft rounded p-6">
+            </a>
+            <a class="portfolio-card-soft block rounded p-6 transition-colors hover:text-primary" href="/skills/maintainability.html">
               <div class="flex items-center gap-5">
                 <i class="bx bx-git-branch skill-icon text-primary"></i>
                 <h3 class="font-header text-lg font-bold uppercase text-primary">Maintainability</h3>
               </div>
               <p class="pt-4 text-grey-20">Readable C# code, object-oriented design, Git workflows, and practical documentation.</p>
-            </article>
-            <article class="portfolio-card-soft rounded p-6">
+            </a>
+            <a class="portfolio-card-soft block rounded p-6 transition-colors hover:text-primary" href="/skills/api-integration.html">
               <div class="flex items-center gap-5">
                 <i class="bx bx-link skill-icon text-primary"></i>
                 <h3 class="font-header text-lg font-bold uppercase text-primary">API Integration</h3>
               </div>
               <p class="pt-4 text-grey-20">Backend endpoints, third-party integrations, and data exchange between internal systems.</p>
-            </article>
+            </a>
           </div>
         </section>
 
@@ -288,30 +306,33 @@
           <div class="container py-16 md:py-20">
             <h2 class="text-center font-header text-3xl font-semibold uppercase text-primary sm:text-4xl">Selected Projects</h2>
             <p class="mx-auto max-w-3xl pt-6 text-center leading-relaxed text-grey-20">
-              Public-safe names and measured outcomes should be verified before publishing. These cards are structured for case studies and can be updated from the new data file.
+              Public repositories that match the current portfolio direction. Private enterprise work can be added later as approved case studies.
             </p>
-            <div class="grid grid-cols-1 gap-8 pt-12 lg:grid-cols-3">
-              <article class="portfolio-card overflow-hidden rounded">
-                <img src="/assets/img/portfolio-microsoft.jpeg" class="h-56 w-full object-cover" alt="Business management system preview" />
-                <div class="p-6">
-                  <h3 class="font-header text-xl font-bold uppercase text-primary">Business Management System</h3>
-                  <p class="pt-4 text-grey-20">Built database-backed workflows for internal operations, reporting, and structured data entry.</p>
+            <div class="mx-auto max-w-4xl pt-12">
+              <a class="project-link block py-8 transition-colors hover:text-primary" href="https://github.com/vuongnhac/api.onion" target="_blank" rel="noreferrer">
+                <div class="grid gap-4 md:grid-cols-3">
+                  <div>
+                    <p class="font-header text-sm font-bold uppercase text-grey-40">Clean Architecture</p>
+                    <h3 class="pt-2 font-header text-2xl font-bold text-primary">api.onion</h3>
+                  </div>
+                  <div class="md:col-span-2">
+                    <p class="leading-relaxed text-grey-20">Clean Architecture sample repository for API structure, separation of concerns, and maintainable backend boundaries.</p>
+                    <p class="pt-4 font-header text-sm font-bold uppercase text-primary">View repository</p>
+                  </div>
                 </div>
-              </article>
-              <article class="portfolio-card overflow-hidden rounded">
-                <img src="/assets/img/portfolio-stripe.jpeg" class="h-56 w-full object-cover" alt="Integration project preview" />
-                <div class="p-6">
-                  <h3 class="font-header text-xl font-bold uppercase text-primary">Integration Workflow</h3>
-                  <p class="pt-4 text-grey-20">Connected application features with external or internal services through clear API contracts.</p>
+              </a>
+              <a class="project-link block py-8 transition-colors hover:text-primary" href="https://github.com/vuongnhac/wpf.mvvm" target="_blank" rel="noreferrer">
+                <div class="grid gap-4 md:grid-cols-3">
+                  <div>
+                    <p class="font-header text-sm font-bold uppercase text-grey-40">Desktop Application</p>
+                    <h3 class="pt-2 font-header text-2xl font-bold text-primary">wpf.mvvm</h3>
+                  </div>
+                  <div class="md:col-span-2">
+                    <p class="leading-relaxed text-grey-20">Simple WPF MVVM application repository showing desktop application structure, view-model separation, and C# implementation habits.</p>
+                    <p class="pt-4 font-header text-sm font-bold uppercase text-primary">View repository</p>
+                  </div>
                 </div>
-              </article>
-              <article class="portfolio-card overflow-hidden rounded">
-                <img src="/assets/img/portfolio-fedex.jpeg" class="h-56 w-full object-cover" alt="Reporting project preview" />
-                <div class="p-6">
-                  <h3 class="font-header text-xl font-bold uppercase text-primary">Reporting Dashboard</h3>
-                  <p class="pt-4 text-grey-20">Prepared operational data views that help teams review status, history, and follow-up work.</p>
-                </div>
-              </article>
+              </a>
             </div>
           </div>
         </section>
@@ -334,6 +355,14 @@
               <i class="bx bx-map contact-icon text-primary"></i>
               <p class="contact-value font-body text-lg font-bold text-primary" data-profile-field="location.publicLabel">635/9 Ba Hat, Dien Hong Ward, Ho Chi Minh City</p>
             </div>
+          </div>
+          <div class="contact-map mt-10 overflow-hidden rounded">
+            <iframe
+              title="Map showing Vuong Tan Nhac location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=635%2F9%20Ba%20Hat%2C%20Dien%20Hong%20Ward%2C%20Ho%20Chi%20Minh%20City&output=embed"
+            ></iframe>
           </div>
         </section>
       </main>

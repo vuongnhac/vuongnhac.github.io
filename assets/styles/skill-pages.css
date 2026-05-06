@@ -1,0 +1,135 @@
+.skill-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-page-shell {
+  min-height: 100vh;
+}
+
+.skill-hero {
+  background-image: linear-gradient(90deg, rgba(85, 64, 174, 0.94), rgba(65, 47, 144, 0.9)), url("/assets/img/bg-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skill-hero .skill-kicker,
+.skill-hero .text-grey-20,
+.skill-hero .text-primary {
+  color: #ffffff;
+}
+
+.skill-hero a {
+  color: #f9e71c;
+}
+
+.skill-kicker {
+  color: #929293;
+  font-family: Raleway, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.skill-visual {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-visual-card {
+  background: transparent;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+}
+
+.skill-visual-icon {
+  align-items: center;
+  background: transparent;
+  border-radius: 9999px;
+  color: #f9e71c;
+  display: inline-flex;
+  font-size: 2rem;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+.evidence-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.evidence-card {
+  background: transparent;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+}
+
+.evidence-card h3,
+.flow-card h3 {
+  color: #5540af;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.flow-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.flow-card {
+  border-left: 0.25rem solid #5540af;
+  padding-left: 1.25rem;
+}
+
+.repo-callout {
+  background: transparent;
+  border-radius: 0.25rem;
+  color: #7c7c7c;
+  padding: 1.5rem;
+}
+
+.repo-callout a {
+  color: #5540af;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stack-detail-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.stack-detail-item {
+  align-items: center;
+  background: transparent;
+  border-radius: 0.25rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+}
+
+.stack-detail-name {
+  color: #252426;
+  font-weight: 600;
+}
+
+.stack-detail-years {
+  color: #5540af;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .evidence-grid,
+  .flow-grid,
+  .skill-visual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
