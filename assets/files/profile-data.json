@@ -70,6 +70,20 @@
       "years": "4 years"
     }
   ],
+  "publicProjects": [
+    {
+      "name": "api.onion",
+      "url": "https://github.com/vuongnhac/api.onion",
+      "category": "Clean Architecture",
+      "summary": "Clean Architecture sample repository for API structure, separation of concerns, and maintainable backend boundaries."
+    },
+    {
+      "name": "wpf.mvvm",
+      "url": "https://github.com/vuongnhac/wpf.mvvm",
+      "category": "Desktop Application",
+      "summary": "Simple WPF MVVM application repository showing desktop application structure, view-model separation, and C# implementation habits."
+    }
+  ],
   "workPreferencesToVerify": [
     "Full-time",
     "Freelance",
